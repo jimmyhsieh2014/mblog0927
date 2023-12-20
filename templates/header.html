@@ -1,6 +1,14 @@
+<!-- footer.html -->
+{% block footer %}
 {% load static %}
 <div class='well'>
     <img src="{% static "images/LOGO.jfif" %}" width="200" height="200">
 </div>
 
 <h1 style="font-family: Jost;">FILM INTRODUCE</h1>
+    {% if now %}
+    <p style='font-family:微軟正黑體;'>現在時刻：{{ now }}</p>
+    {% else %}
+    <p style='font-family:微軟正黑體;'>Film Introduce...</p>
+    {% endif %}
+{% endblock %}
