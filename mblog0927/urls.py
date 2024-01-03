@@ -30,5 +30,11 @@ urlpatterns = [
     path('carlist/', mv.carlist),
     path('carlist/<int:maker>/', mv.carlist, name='carlist-url'),
     path('post/new', mv.new_post, name="post-new"),
-    path('test/', testv.index, name="test-new")
+    path('test/', testv.index, name="test-new"),
+    path('test/delpost/<int:pid>/', testv.delpost),
+    path('test/contact', testv.contact),
+    path('post2db/', testv.post2db),
+    path('register/', testv.register),
+    path('login/', testv.login, name='login'),
+    path('profile/', testv.profile)
 ]
