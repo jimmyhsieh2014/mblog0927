@@ -25,3 +25,4 @@ class Profile(models.Model):
     website = models.URLField(null=True)
 	
     def __str__(self):
+        return self.user.username
